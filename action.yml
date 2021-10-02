@@ -16,7 +16,7 @@ inputs:
     required: true
   client-secret:
     description: 'client secret'
-    required: true
+    required: false
   refresh-token:
     description: 'refresh token'
     required: true
