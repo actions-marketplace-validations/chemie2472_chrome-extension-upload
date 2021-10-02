@@ -1678,7 +1678,7 @@ function run() {
             const clientId = core.getInput('client-id', { required: true });
             const refreshToken = core.getInput('refresh-token', { required: true });
             const globFlg = core.getInput('glob');
-	    const publishFlg = core.getInput('publish') as 'true' | 'false'
+	    const publishFlg = core.getInput('publish');
             const webStore = __webpack_require__(673)({
                 extensionId,
                 clientId,
