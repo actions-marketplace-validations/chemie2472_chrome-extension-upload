@@ -15,18 +15,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mnao305/chrome-extension-upload.git"
+    "url": "git+https://github.com/chemie2472/chrome-extension-upload.git"
   },
   "keywords": [
     "actions",
     "node",
     "setup"
   ],
-  "author": "mnao305",
+  "author": "chemie2472",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "chrome-webstore-upload": "^0.2.2",
+    "chrome-webstore-upload": "latest",
     "glob": "^7.1.6"
   },
   "devDependencies": {
