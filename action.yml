@@ -1,6 +1,6 @@
-name: 'Chrome extension upload action'
+name: 'Chrome extension upload/publish action'
 description: 'upload & publish extensions to the Chrome Web Store'
-author: 'mnao305'
+author: 'chemie2472'
 branding:
   color: blue
   icon: upload-cloud
@@ -22,6 +22,9 @@ inputs:
     required: true
   glob:
     description: 'if true the file can be a glob pattern'
+    default: false
+  publish:
+    description: 'if true upload file and publish'
     default: false
 runs:
   using: 'node12'
