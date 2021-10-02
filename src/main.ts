@@ -35,7 +35,7 @@ async function run(): Promise<void> {
     const filePath = core.getInput('file-path', {required: true})
     const extensionId = core.getInput('extension-id', {required: true})
     const clientId = core.getInput('client-id', {required: true})
-    const clientSecret = core.getInput('client-secret', {required: true})
+    const clientSecret = core.getInput('client-secret', {required: false})
     const refreshToken = core.getInput('refresh-token', {required: true})
     const globFlg = core.getInput('glob') as 'true' | 'false'
     const publishFlg = core.getInput('publish') as 'true' | 'false'
@@ -43,7 +43,6 @@ async function run(): Promise<void> {
     const webStore = require('chrome-webstore-upload')({
       extensionId,
       clientId,
-      clientSecret,
       refreshToken
     })
 
